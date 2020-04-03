@@ -1,0 +1,214 @@
+@media(orientation: portrait) {
+	.headerCarousel {
+		background-size: auto 100%;
+		background-position: right;
+	}
+	header {
+		margin: 0 0 10vw;
+		position: relative;
+	}
+	h1 {
+		margin: 0;
+		font-size: 10vw;
+		line-height: 12vw;
+	}
+	header > button {
+		display: block;
+		width: 10vw;
+		height: 10vw;
+		padding: 1vw;
+		background-color: rgba(0, 0, 0, 0.6);
+		border: none;
+		border-radius:0 0 0 1vw;
+		position: absolute;
+		bottom:-10vw;
+		right: 0;
+	}
+	header > button hr {
+		width: 8vw;
+		height: 1vw;
+		margin: 0 0 2vw;
+		background-color: rgb(255, 255, 255);
+		border: none;
+		border-radius: 0.5vw;
+	}
+	button hr:last-child { margin: 0; }
+	nav {
+		width: 100vw;
+		flex-direction: column;
+		align-items: flex-end;
+		padding: 2vw;
+		background-color: rgba(0, 0, 0);
+		position: absolute;
+		top: 12vw;
+		right: -100vw;
+		animation-duration: 0.5s;
+		animation-timing-function: ease-in-out;
+		animation-fill-mode: forwards;
+		z-index: 9999;
+	}
+	@keyframes addNav {
+		0% {
+			right: -100vw;
+		}
+		100% {
+			right: 0;
+		}
+	}
+	@keyframes removeNav {
+		0% {
+			right: 0;
+		}
+		100% {
+			right: -100vw;
+		}
+	}
+	nav a {
+		margin: 0 0 2vw;
+		font-size: 7vw;
+		text-align: right;
+		white-space: nowrap;
+		line-height: 8.4vw;
+	}
+	nav a:after {
+		display: none;
+	}
+	nav button {
+		display: block;
+		width: 10vw;
+		height: 10vw;
+		background-color: rgb(0, 0, 0);
+		border: none;
+		position: relative;
+	}
+	svg {
+		width: 10vw;
+		height:10vw;
+	}
+	path {
+		fill: rgb(255, 255, 255);
+	}
+	.headerCarousel article {
+		padding: 5vw 9vw;
+	}
+	.carousel {
+		width: 82vw;
+		height: 123vw;
+		border-style: solid;
+		border-width: 1vw;
+		border-color: rgb(235, 199, 68);
+		border-radius: 1vw;
+		position: relative;
+		overflow: hidden;
+	}
+	.carousel > div {
+		width: auto;
+		display: block;
+	}
+	.block1 {
+		left: 0;
+	}
+	.block2, .block3 {
+		left: 80vw;
+	}
+	@keyframes removeBlock {
+		0% {
+			left: 0vw;
+		}
+		100% {
+			left: -80vw;
+		}
+	}
+	@keyframes addBlock {
+		0% {
+			left: 80vw;
+		}
+		100% {
+			left: 0vw;
+		}
+	}
+	.info {
+		width: 80vw;
+		height: 60vw;
+	}
+	.info h3 {
+		font-size: 6vw;
+		line-height: 7.2vw;
+		margin: 0 0 4vw;
+	}
+	.info p {
+		font-size: 5vw;
+		font-weight: 700;
+		line-height: 6vw;
+	}
+	hr {
+		width: 80vw;
+		height: 1vw;
+	}
+	.carousel img {
+		width: 80vw;
+		height: 60vw;
+	}
+	.popularGoods, .newItems {
+		display: block;
+		padding: 2vw 5vw;
+	}
+	h2 {
+		width: 90vw;
+		margin: 0 0 4vw;
+		font-size: 8vw;
+		line-height: 9.6vw;
+	}
+	.popularGoods article, .newItems article {
+		width: 90vw;
+		margin: 0 0 4vw;
+	}
+	.popularGoods article:last-child, .newItems article:last-child {
+		margin: 0;
+	}
+	.popularGoods article {
+		padding: 2vw 4vw; 
+		border-width: 0 1vw; 
+		border-color: rgb(205, 169, 38);
+	}
+	.popularGoods img, .newItems img {
+		width: 80vw;
+		height: 78vw;
+		margin: 0 0 3vw;
+		border-radius: 40vw;
+	}
+	.popularGoods p, .newItems p {
+		margin: 0 0 1vw;
+		font-size: 7vw;
+		color: rgb(255, 255, 255);
+		text-align: center;
+		line-height: 8.4vw;
+	}
+	.popularGoods input, .newItems input {
+		display: block;
+		width: 50vw;
+		height: 7.2vw;
+		margin: 0 15vw;
+		font-size: 6vw;
+		color: rgb(255, 255, 255);
+		line-height: 7.2vw;
+		border-radius: 0;
+		border-width: 0;
+	}
+	.newItems article {
+		padding: 1vw 5vw;
+		border-width: 1vw 0;
+		border-color: rgb(101, 67, 33);
+	}
+	footer {
+		padding:3vw;
+	}
+	.contact {
+		width: 25vw;
+		height: 10vw;
+	}
+	.contact img {
+		width: 10vw;
+		height: 10vw;
+	}
+}
